@@ -323,6 +323,7 @@ body > div.page > .content > header > .icons > .profile > ul {
   width: 170px;
   opacity: 0;
   transition: var(--main-transition);
+  z-index: 100;
 }
 
 body > div.page > .content > header > .icons > .profile > ul li {
@@ -359,9 +360,26 @@ body > div.page > .content > div.wraper {
 @media (max-width: 768px) {
   body > div.page > .content > div.wraper {
     grid-template-columns: minmax(200px, 1fr);
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
 /* End Wraper Styles */
+
+/* Start Wraper Boxs Styles */
+body > div.page > .content > div.wraper > div.box {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  body > div.page > .content > div.wraper > div.box {
+    text-align: center;
+  }
+}
+/* End Wraper Boxs Styles */
 
 /* Start Animations Styles */
 @keyframes flash-danger {
