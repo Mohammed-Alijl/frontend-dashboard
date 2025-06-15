@@ -203,3 +203,171 @@ body > div.page > aside > nav > ul li span {
   }
 }
 /* End Sidebar Styles */
+
+/* Start Header Styles */
+body > div.page > .content {
+  width: 100%;
+}
+
+body > div.page > .content > header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #fff;
+  min-width: 100%;
+}
+
+body > div.page > .content > header > form {
+  position: relative;
+}
+
+body > div.page > .content > header > form::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f002";
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #777;
+  font-size: 14px;
+  font-weight: bold;
+  z-index: 1;
+}
+
+body > div.page > .content > header > form input {
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  padding: 10px 10px 10px 30px;
+  position: relative;
+  transition: var(--main-transition);
+  caret-color: #777;
+  color: #777;
+  padding-left: 30px;
+}
+
+@media (max-width: 768px) {
+  body > div.page > .content > header > form input {
+    max-width: 150px;
+  }
+}
+
+body > div.page > .content > header > form input:focus {
+  padding-left: 50px;
+}
+
+body > div.page > .content > header > form input::placeholder {
+  padding-left: 10px;
+  text-transform: capitalize;
+  transition: var(--main-transition);
+}
+
+body > div.page > .content > header > form input:focus::placeholder {
+  opacity: 0;
+}
+
+body > div.page > .content > header > .icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+body > div.page > .content > header > .icons span {
+  position: relative;
+  font-size: 18px;
+  cursor: pointer;
+  margin-right: 25px;
+}
+
+body > div.page > .content > header > .icons > span:after {
+  content: "";
+  position: absolute;
+  top: -7px;
+  right: -7px;
+  width: 7px;
+  height: 7px;
+  background-color: rgb(220, 53, 70);
+  border-radius: 50%;
+}
+
+body > div.page > .content > header > .icons span:first-child::after {
+  animation: flash-danger 0.9s linear infinite;
+}
+
+body > div.page > .content > header > .icons span:nth-child(2)::after {
+  background-color: rgb(34, 192, 60);
+  animation: flash 0.9s linear infinite;
+}
+
+body > div.page > .content > header > .icons > .profile {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  cursor: pointer;
+}
+
+body > div.page > .content > header > .icons > .profile:hover > ul {
+  opacity: 1;
+  top: 65px;
+}
+
+body > div.page > .content > header > .icons > .profile img {
+  max-width: 100%;
+  border-radius: 50%;
+}
+
+body > div.page > .content > header > .icons > .profile > ul {
+  position: absolute;
+  right: 10px;
+  top: 80px;
+  background-color: white;
+  width: 170px;
+  opacity: 0;
+  transition: var(--main-transition);
+}
+
+body > div.page > .content > header > .icons > .profile > ul li {
+  padding: 20px;
+  color: black;
+  border-bottom: 1px solid #ddd;
+  transition: var(--main-transition);
+}
+
+body > div.page > .content > header > .icons > .profile > ul li:hover {
+  transform: translateX(10px);
+  opacity: 0.6;
+}
+
+body > div.page > .content > header > .icons > .profile > ul li:last-child a {
+  color: red;
+}
+
+body > div.page > .content > header > .icons > .profile > ul li a i {
+  margin-right: 15px;
+}
+/* End Header Styles */
+
+/* Start Animations Styles */
+@keyframes flash-danger {
+  0% {
+    box-shadow: 0 0 0 0 rgba(220, 53, 69, 0.9);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(220, 53, 69, 0);
+  }
+  100% {
+    box-sizing: 0 0 0 0 rgba(220, 53, 69, 0);
+  }
+}
+
+@keyframes flash {
+  0% {
+    box-shadow: 0 0 0 0 rgba(34, 192, 60, 0.9);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(34, 192, 60, 0);
+  }
+  100% {
+    box-sizing: 0 0 0 0 rgba(34, 192, 60, 0);
+  }
+}
+/* End Animations Styles */
