@@ -946,6 +946,58 @@ body
 }
 /* End Yearly Targets Box Styles */
 
+/* Start Tickets Box Styles */
+body > div.page > .content > div.wraper > div.box.tickets {
+  padding: 20px;
+}
+
+body > div.page > .content > div.wraper > div.box.tickets > .content {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+body > div.page > .content > div.wraper > div.box.tickets > .content > .card {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  text-align: center;
+}
+
+body > div.page > .content > div.wraper > div.box.tickets > .content > .card i {
+  font-size: 30px;
+  margin: 20px auto 10px;
+} 
+
+body > div.page > .content > div.wraper > div.box.tickets > .content > .card:first-of-type i {
+  color: var(--orange-color);
+}
+
+body > div.page > .content > div.wraper > div.box.tickets > .content > .card:nth-child(2) i {
+  color: var(--main-color);
+}
+
+body > div.page > .content > div.wraper > div.box.tickets > .content > .card:nth-child(3) i {
+  color: var(--green-color);
+}
+
+body > div.page > .content > div.wraper > div.box.tickets > .content > .card:last-of-type i {
+  color: var(--red-color);
+}
+
+body > div.page > .content > div.wraper > div.box.tickets > .content > .card .amount {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+body > div.page > .content > div.wraper > div.box.tickets > .content > .card .title {
+  text-transform: capitalize;
+  color: var(--grey-color);
+  margin-bottom: 10px;
+}
+/* End Tickets Targets Box Styles */
+
 /* Start Animations Styles */
 @keyframes flash-danger {
   0% {
