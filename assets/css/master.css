@@ -1170,40 +1170,147 @@ body > div.page > .content > div.wraper > section.tasks > .content > .task {
   border-bottom: 1px solid #ccc;
 }
 
-body > div.page > .content > div.wraper > section.tasks > .content > .task.deleted {
+body
+  > div.page
+  > .content
+  > div.wraper
+  > section.tasks
+  > .content
+  > .task.deleted {
   color: var(--grey-color);
 }
 
-body > div.page > .content > div.wraper > section.tasks > .content > .task.deleted > .details {
+body
+  > div.page
+  > .content
+  > div.wraper
+  > section.tasks
+  > .content
+  > .task.deleted
+  > .details {
   text-decoration: line-through;
 }
 
-body > div.page > .content > div.wraper > section.tasks > .content > .task > .details {
+body
+  > div.page
+  > .content
+  > div.wraper
+  > section.tasks
+  > .content
+  > .task
+  > .details {
   text-transform: capitalize;
 }
 
 @media (max-width: 768px) {
-  body > div.page > .content > div.wraper > section.tasks > .content > .task > .details {
+  body
+    > div.page
+    > .content
+    > div.wraper
+    > section.tasks
+    > .content
+    > .task
+    > .details {
     font-size: 13px;
     text-align: left;
   }
 }
 
-body > div.page > .content > div.wraper > section.tasks > .content > .task > .details > p.description {
+body
+  > div.page
+  > .content
+  > div.wraper
+  > section.tasks
+  > .content
+  > .task
+  > .details
+  > p.description {
   color: var(--grey-color);
   margin-top: 5px;
 }
 
-body > div.page > .content > div.wraper > section.tasks > .content > .task:not(.deleted) > i {
+body
+  > div.page
+  > .content
+  > div.wraper
+  > section.tasks
+  > .content
+  > .task:not(.deleted)
+  > i {
   cursor: pointer;
   transition: var(--main-transition);
 }
 
-body > div.page > .content > div.wraper > section.tasks > .content > .task:not(.deleted) > i:hover {
+body
+  > div.page
+  > .content
+  > div.wraper
+  > section.tasks
+  > .content
+  > .task:not(.deleted)
+  > i:hover {
   color: var(--red-color);
   transform: translateY(-5px);
 }
 /* End Latest Tasks Section Styles */
+
+/* Start Top Search Section Styles */
+body > div.page > .content > div.wraper > section.top-search {
+  padding: 20px;
+}
+
+body > div.page > .content > div.wraper > section.top-search > .content {
+  margin-top: 20px;
+}
+
+body > div.page > .content > div.wraper > section.top-search > .content > .row,
+body
+  > div.page
+  > .content
+  > div.wraper
+  > section.top-search
+  > .content
+  > .head {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+body
+  > div.page
+  > .content
+  > div.wraper
+  > section.top-search
+  > .content
+  > .row
+  span:first-of-type {
+  color: var(--grey-color);
+}
+
+body
+  > div.page
+  > .content
+  > div.wraper
+  > section.top-search
+  > .content
+  > .head
+  span {
+  font-weight: bold;
+}
+
+body
+  > div.page
+  > .content
+  > div.wraper
+  > section.top-search
+  > .content
+  > .row
+  span:last-of-type {
+  padding: 10px;
+  border-radius: 6px;
+  background-color: #eee;
+}
+/* End Top Search Section Styles */
 
 /* Start Animations Styles */
 @keyframes flash-danger {
