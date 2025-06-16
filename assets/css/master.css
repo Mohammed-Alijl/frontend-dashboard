@@ -1,8 +1,12 @@
 /* Start Global Varibles */
 :root {
   --main-transition: 0.3s;
-  --main-color: #2196f3;
-  --main-color-alt: #0d69d5;
+  --main-color: #0075ff;
+  --main-alt-color: #0d69d5;
+  --orange-color: #f59e0b;
+  --green-color: #22c55e;
+  --red-color: #f44336;
+  --grey-color: #888;
 }
 /* End Global Varibles */
 
@@ -38,8 +42,8 @@ body {
 }
 
 ::selection {
-  background-color: #fff;
-  color: var(--main-color);
+  color: #fff;
+  background-color: var(--main-color);
 }
 
 :focus {
@@ -370,7 +374,7 @@ body > div.page > .content > div.wraper {
 body > div.page > .content > div.wraper > div.box {
   background-color: #fff;
   border-radius: 10px;
-  padding: 20px;
+  overflow: hidden;
   position: relative;
 }
 
@@ -380,6 +384,110 @@ body > div.page > .content > div.wraper > div.box {
   }
 }
 /* End Wraper Boxs Styles */
+
+/* Start Welcome Box Styles */
+body > div.page > .content > div.wraper > div.box.welcome > div:first-of-type {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  background-color: #eee;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+  body > div.page > .content > div.wraper > div.box.welcome > div:first-of-type {
+  padding-bottom: 30px;
+  }
+}
+
+body > div.page > .content > div.wraper > div.box.welcome > div:first-of-type > .info {
+  padding: 20px;
+}
+
+body > div.page > .content > div.wraper > div.box.welcome > div:first-of-type > .info h3 {
+  font-size: 30px;
+}
+
+body > div.page > .content > div.wraper > div.box.welcome > div:first-of-type > .info h4 {
+  color: #ccc;
+  color: var(--grey-color);
+  font-weight: normal;
+  margin-top: 5px;
+  text-align: left;
+}
+
+body > div.page > .content > div.wraper > div.box.welcome > div:first-of-type > img {
+  width: 250px;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  body > div.page > .content > div.wraper > div.box.welcome > div:first-of-type > img {
+    display: none;
+  }
+}
+
+body > div.page > .content > div.wraper > div.box.welcome > div:first-of-type > .img-holder {
+  border: 5px solid white;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  position: absolute;
+  left: 20px;
+  bottom: 0;
+  transform: translateY(50%);
+}
+
+@media (max-width: 768px) {
+  body > div.page > .content > div.wraper > div.box.welcome > div:first-of-type > .img-holder {
+    left: 50%;
+    transform: translate(-50%, 50%);
+  }
+}
+
+body > div.page > .content > div.wraper > div.box.welcome > div:first-of-type > .img-holder img {
+  max-width: 100%;
+  border-radius: 50%;
+}
+
+body > div.page > .content > div.wraper > div.box.welcome > div:last-of-type {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #eee;
+  padding: 20px 30px;
+  text-align: center;
+  gap: 30px;
+}
+
+@media (max-width: 768px) {
+  body > div.page > .content > div.wraper > div.box.welcome > div:last-of-type {
+    flex-direction: column;
+  }
+}
+
+body > div.page > .content > div.wraper > div.box.welcome > div:last-of-type > div h3.title{
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+
+body > div.page > .content > div.wraper > div.box.welcome > div:last-of-type > div h3.note {
+  font-size: 15px;
+  color: var(--grey-color);
+}
+
+body > div.page > .content > div.wraper > div.box.welcome > button {
+  color: white;
+  background-color: var(--main-color);
+  transition: var(--main-transition);
+  border-radius: 6px;
+  padding: 5px 10px;
+  border: none;
+  margin: 20px;
+  margin-left:85%;
+  cursor: pointer;
+}
+/* End Welcome Box Styles */
 
 /* Start Animations Styles */
 @keyframes flash-danger {
