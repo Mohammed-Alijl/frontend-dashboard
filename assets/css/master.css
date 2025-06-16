@@ -1433,6 +1433,95 @@ body
 }
 /* End Latest Uploads Section Styles */
 
+/* Start Last Projects Section Styles */
+body > div.page > .content > div.wraper > section.projects {
+  padding: 20px;
+}
+
+body > div.page > .content > div.wraper > section.projects > .content {
+  margin-top: 30px;
+}
+
+body > div.page > .content > div.wraper > section.projects > .content > ul {
+  position: relative;
+}
+
+body
+  > div.page
+  > .content
+  > div.wraper
+  > section.projects
+  > .content
+  > ul::before {
+  content: "";
+  height: 100%;
+  width: 2px;
+  background-color: var(--main-color);
+  position: absolute;
+  left: 7px;
+}
+
+body
+  > div.page
+  > .content
+  > div.wraper
+  > section.projects
+  > .content
+  > ul
+  > li {
+  padding-left: 30px;
+  margin-bottom: 30px;
+  position: relative;
+  text-align: left;
+  font-size: 18px;
+}
+
+body
+  > div.page
+  > .content
+  > div.wraper
+  > section.projects
+  > .content
+  > ul
+  > li::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: -5px;
+  top: 50%;
+  border-radius: 50%;
+  border: 3px solid white;
+  background-color: white;
+  outline: 2px solid var(--main-color);
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+body
+  > div.page
+  > .content
+  > div.wraper
+  > section.projects
+  > .content
+  > ul
+  > li:nth-last-child(2):before {
+  animation: on-off 1s linear infinite alternate;
+}
+
+body
+  > div.page
+  > .content
+  > div.wraper
+  > section.projects
+  > .content
+  > ul
+  > li:not(:last-of-type):before {
+  background-color: var(--main-color);
+}
+
+/* End Last Projects Section Styles */
+
 /* Start Animations Styles */
 @keyframes flash-danger {
   0% {
@@ -1455,6 +1544,15 @@ body
   }
   100% {
     box-sizing: 0 0 0 0 rgba(34, 192, 60, 0);
+  }
+}
+
+@keyframes on-off {
+  0% {
+    background-color: var(--main-color);
+  }
+  100% {
+    background-color: white;
   }
 }
 /* End Animations Styles */
