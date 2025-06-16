@@ -1153,6 +1153,58 @@ body
 }
 /* End Latest Event Section Styles */
 
+/* Start Latest Tasks Section Styles */
+body > div.page > .content > div.wraper > section.tasks {
+  padding: 20px;
+}
+
+body > div.page > .content > div.wraper > section.tasks > .content {
+  margin-top: 30px;
+}
+
+body > div.page > .content > div.wraper > section.tasks > .content > .task {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+}
+
+body > div.page > .content > div.wraper > section.tasks > .content > .task.deleted {
+  color: var(--grey-color);
+}
+
+body > div.page > .content > div.wraper > section.tasks > .content > .task.deleted > .details {
+  text-decoration: line-through;
+}
+
+body > div.page > .content > div.wraper > section.tasks > .content > .task > .details {
+  text-transform: capitalize;
+}
+
+@media (max-width: 768px) {
+  body > div.page > .content > div.wraper > section.tasks > .content > .task > .details {
+    font-size: 13px;
+    text-align: left;
+  }
+}
+
+body > div.page > .content > div.wraper > section.tasks > .content > .task > .details > p.description {
+  color: var(--grey-color);
+  margin-top: 5px;
+}
+
+body > div.page > .content > div.wraper > section.tasks > .content > .task:not(.deleted) > i {
+  cursor: pointer;
+  transition: var(--main-transition);
+}
+
+body > div.page > .content > div.wraper > section.tasks > .content > .task:not(.deleted) > i:hover {
+  color: var(--red-color);
+  transform: translateY(-5px);
+}
+/* End Latest Tasks Section Styles */
+
 /* Start Animations Styles */
 @keyframes flash-danger {
   0% {
