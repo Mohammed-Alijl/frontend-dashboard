@@ -8,7 +8,7 @@
       content="Welcome To Mohammed Dashbaord, Profissional Dashbaord For All Things"
     />
     <meta name="title" content="Mohammed Dashboard" />
-    <title>Dashboard</title>
+    <title>Settings</title>
     <!-- Website Logo -->
     <link rel="shortcut icon" href="assets/img/logo.avif" type="image/x-icon" />
     <!-- The Normailze CSS Layout -->
@@ -126,7 +126,39 @@
 
         <!-- Start Page Content -->
         <h2 class="main-title">settings</h2>
-        <div class="wraper"></div>
+        <div class="wraper">
+          <section class="box site-controll">
+            <h3 class="title">Site Control</h3>
+            <p class="description">
+              Control The Website If There Is Maintenance
+            </p>
+            <form action="#">
+              <div class="row">
+                <div class="details">
+                  <h4 class="title">Website Control</h4>
+                  <p class="description">
+                    Open/Close Website And Type The Reason
+                  </p>
+                </div>
+                <label>
+                  <input
+                    type="checkbox"
+                    class="toggle-checkbox"
+                    name="open_closed_website"
+                    checked
+                  />
+                  <div class="toggle-switch"></div>
+                </label>
+              </div>
+
+              <textarea
+                name="mangement_content"
+                id="mangement_content"
+                placeholder="Close Mangement Content"
+              ></textarea>
+            </form>
+          </section>
+        </div>
         <!-- End Page Content -->
       </div>
     </div>

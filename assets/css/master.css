@@ -2212,6 +2212,169 @@ body
 }
 /* End Projects Table Section Styles */
 
+/* ====================================================== */
+/* ============= START SETTINGS PAGE ==================== */
+/* ====================================================== */
+
+/* Start Controll Site Section Styles */
+body > div.page > .content > div.wraper > section.site-controll {
+  padding: 20px;
+}
+
+body > div.page > .content > div.wraper > section.site-controll form {
+  margin-top: 30px;
+}
+
+body > div.page > .content > div.wraper > section.site-controll form > .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  body > div.page > .content > div.wraper > section.site-controll form > .row {
+    flex-direction: column;
+  }
+}
+
+body > div.page > .content > div.wraper > section.site-controll form > .row p {
+  color: var(--grey-color);
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+body
+  > div.page
+  > .content
+  > div.wraper
+  > section.site-controll
+  form
+  > .row
+  .toggle-checkbox {
+  appearance: none;
+}
+
+body
+  > div.page
+  > .content
+  > div.wraper
+  > section.site-controll
+  form
+  > .row
+  .toggle-switch {
+  background-color: #ddd;
+  border-radius: 60px;
+  height: 30px;
+  width: 80px;
+  position: relative;
+  cursor: pointer;
+  transition: var(--main-transition);
+}
+
+body
+  > div.page
+  > .content
+  > div.wraper
+  > section.site-controll
+  form
+  > .row
+  .toggle-switch::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f00d";
+  background-color: white;
+  color: var(--red-color);
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  font-weight: bold;
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  transition: var(--main-transition);
+}
+
+body
+  > div.page
+  > .content
+  > div.wraper
+  > section.site-controll
+  form
+  > .row
+  .toggle-checkbox:checked
+  + .toggle-switch {
+  background-color: var(--main-color);
+}
+
+body
+  > div.page
+  > .content
+  > div.wraper
+  > section.site-controll
+  form
+  > .row
+  .toggle-checkbox:checked
+  + .toggle-switch::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f00c";
+  left: 55px;
+  color: var(--green-color);
+}
+
+body
+  > div.page
+  > .content
+  > div.wraper
+  > section.site-controll
+  form
+  > textarea {
+  width: 100%;
+  height: 150px;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 6px;
+  resize: none;
+  caret-color: var(--grey-color);
+  color: var(--grey-color);
+  text-transform: capitalize;
+  transition: var(--main-color);
+}
+
+body
+  > div.page
+  > .content
+  > div.wraper
+  > section.site-controll
+  form
+  > textarea:focus {
+  border: 1px solid var(--main-color);
+}
+
+body
+  > div.page
+  > .content
+  > div.wraper
+  > section.site-controll
+  form
+  > textarea::placeholder {
+  transition: var(--main-transition);
+}
+
+body
+  > div.page
+  > .content
+  > div.wraper
+  > section.site-controll
+  form
+  > textarea:focus::placeholder {
+  opacity: 0;
+}
+/* End Controll Site Section Styles */
+
 /* Start Animations Styles */
 @keyframes flash-danger {
   0% {
