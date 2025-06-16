@@ -1312,6 +1312,127 @@ body
 }
 /* End Top Search Section Styles */
 
+/* Start Latest Uploads Section Styles */
+body > div.page > .content > div.wraper > section.uploads {
+  padding: 20px;
+}
+
+body > div.page > .content > div.wraper > section.uploads > .content > .row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  border-bottom: 1px solid #ddd;
+  padding: 20px;
+}
+
+body
+  > div.page
+  > .content
+  > div.wraper
+  > section.uploads
+  > .content
+  > .row
+  > i {
+  font-size: 20px;
+}
+
+body
+  > div.page
+  > .content
+  > div.wraper
+  > section.uploads
+  > .content
+  > .row
+  > i.fa-file-pdf {
+  color: var(--red-color);
+}
+
+body
+  > div.page
+  > .content
+  > div.wraper
+  > section.uploads
+  > .content
+  > .row
+  > i.fa-file-word {
+  color: var(--main-color);
+}
+
+body
+  > div.page
+  > .content
+  > div.wraper
+  > section.uploads
+  > .content
+  > .row
+  > i.fa-file-video {
+  color: var(--green-color);
+}
+
+body
+  > div.page
+  > .content
+  > div.wraper
+  > section.uploads
+  > .content
+  > .row
+  > i.fa-file-powerpoint {
+  color: var(--orange-color);
+}
+
+body
+  > div.page
+  > .content
+  > div.wraper
+  > section.uploads
+  > .content
+  > .row
+  > .details {
+  color: var(--grey-color);
+}
+
+body
+  > div.page
+  > .content
+  > div.wraper
+  > section.uploads
+  > .content
+  > .row
+  > .details
+  > h3.file-name {
+  font-size: 18px;
+}
+
+body
+  > div.page
+  > .content
+  > div.wraper
+  > section.uploads
+  > .content
+  > .row
+  > .details
+  > p.username {
+  font-size: 14px;
+}
+
+body
+  > div.page
+  > .content
+  > div.wraper
+  > section.uploads
+  > .content
+  > .row
+  > .storage {
+  position: absolute;
+  right: 10px;
+  padding: 10px;
+  background-color: #eee;
+  border-radius: 6px;
+}
+/* End Latest Uploads Section Styles */
+
 /* Start Animations Styles */
 @keyframes flash-danger {
   0% {
