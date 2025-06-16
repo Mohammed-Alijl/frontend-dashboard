@@ -1689,43 +1689,99 @@ body > div.page > .content > div.wraper > section.last-post > .post > .info {
   gap: 20px;
   align-items: center;
   margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
 }
 
-body > div.page > .content > div.wraper > section.last-post > .post > .info > .img-holder {
+body
+  > div.page
+  > .content
+  > div.wraper
+  > section.last-post
+  > .post
+  > .info
+  > .img-holder {
   width: 50px;
   height: 50px;
 }
 
-body > div.page > .content > div.wraper > section.last-post > .post > .info img {
+body
+  > div.page
+  > .content
+  > div.wraper
+  > section.last-post
+  > .post
+  > .info
+  img {
   max-width: 100%;
   border-radius: 50%;
 }
 
 body > div.page > .content > div.wraper > section.last-post > .post > .info p {
   color: var(--grey-color);
+  text-transform: capitalize;
+  margin-top: 5px;
 }
 
-body > div.page > .content > div.wraper > section.last-post > .post > .content p {
-  line-height: 1.7;
+body
+  > div.page
+  > .content
+  > div.wraper
+  > section.last-post
+  > .post
+  > .content
+  p {
+  line-height: 2;
   text-transform: capitalize;
 }
 
-body > div.page > .content > div.wraper > section.last-post > .post > .post-footer {
+body
+  > div.page
+  > .content
+  > div.wraper
+  > section.last-post
+  > .post
+  > .post-footer {
   display: flex;
   justify-content: space-between;
-  margin-top: 20px;
+  padding-top: 20px;
+  margin-top: 50px;
+  border-top: 1px solid #eee;
 }
 
-body > div.page > .content > div.wraper > section.last-post > .post > .post-footer i {
+body
+  > div.page
+  > .content
+  > div.wraper
+  > section.last-post
+  > .post
+  > .post-footer
+  i {
   transition: var(--main-transition);
   cursor: pointer;
 }
 
-body > div.page > .content > div.wraper > section.last-post > .post > .post-footer i:first-of-type:hover {
+body
+  > div.page
+  > .content
+  > div.wraper
+  > section.last-post
+  > .post
+  > .post-footer
+  span:first-of-type
+  i:hover {
   color: var(--red-color);
 }
 
-body > div.page > .content > div.wraper > section.last-post > .post > .post-footer i:last-of-type:hover {
+body
+  > div.page
+  > .content
+  > div.wraper
+  > section.last-post
+  > .post
+  > .post-footer
+  span:last-of-type
+  i:hover {
   color: var(--main-color);
 }
 /* End Last Post Section Styles */
