@@ -1522,6 +1522,159 @@ body
 
 /* End Last Projects Section Styles */
 
+/* Start Reminders Section Styles */
+body > div.page > .content > div.wraper > section.reminders {
+  padding: 20px;
+}
+
+body > div.page > .content > div.wraper > section.reminders .content {
+  margin-top: 30px;
+}
+
+body
+  > div.page
+  > .content
+  > div.wraper
+  > section.reminders
+  > .content
+  > .reminder {
+  position: relative;
+  text-transform: capitalize;
+  padding-left: 50px;
+  margin-bottom: 20px;
+}
+
+body
+  > div.page
+  > .content
+  > div.wraper
+  > section.reminders
+  > .content
+  > .reminder::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+}
+
+body
+  > div.page
+  > .content
+  > div.wraper
+  > section.reminders
+  > .content
+  > .reminder::after {
+  content: "";
+  width: 2px;
+  height: 100%;
+  position: absolute;
+  left: 30px;
+  top: 0;
+}
+
+body
+  > div.page
+  > .content
+  > div.wraper
+  > section.reminders
+  > .content
+  > .reminder:first-of-type:before,
+body
+  > div.page
+  > .content
+  > div.wraper
+  > section.reminders
+  > .content
+  > .reminder:first-of-type::after {
+  background-color: var(--main-color);
+}
+
+body
+  > div.page
+  > .content
+  > div.wraper
+  > section.reminders
+  > .content
+  > .reminder:nth-child(2):before,
+body
+  > div.page
+  > .content
+  > div.wraper
+  > section.reminders
+  > .content
+  > .reminder:nth-child(2)::after {
+  background-color: var(--green-color);
+}
+
+body
+  > div.page
+  > .content
+  > div.wraper
+  > section.reminders
+  > .content
+  > .reminder:nth-child(3):before,
+body
+  > div.page
+  > .content
+  > div.wraper
+  > section.reminders
+  > .content
+  > .reminder:nth-child(3)::after {
+  background-color: var(--orange-color);
+}
+
+body
+  > div.page
+  > .content
+  > div.wraper
+  > section.reminders
+  > .content
+  > .reminder:nth-child(4):before,
+body
+  > div.page
+  > .content
+  > div.wraper
+  > section.reminders
+  > .content
+  > .reminder:nth-child(4)::after {
+  background-color: var(--red-color);
+}
+
+body
+  > div.page
+  > .content
+  > div.wraper
+  > section.reminders
+  > .content
+  > .reminder:nth-child(5):before,
+body
+  > div.page
+  > .content
+  > div.wraper
+  > section.reminders
+  > .content
+  > .reminder:nth-child(5)::after {
+  background-color: blueviolet;
+}
+
+body
+  > div.page
+  > .content
+  > div.wraper
+  > section.reminders
+  > .content
+  > .reminder
+  > p {
+  color: var(--grey-color);
+  margin-top: 5px;
+  font-size: 14px;
+}
+/* End Reminders Section Styles */
+
 /* Start Animations Styles */
 @keyframes flash-danger {
   0% {
