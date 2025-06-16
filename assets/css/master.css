@@ -351,6 +351,27 @@ body > div.page > .content > header > .icons > .profile > ul li a i {
 }
 /* End Header Styles */
 
+/* Start Main Title Styles */
+body > .page > .content > .main-title {
+  text-transform: capitalize;
+  font-size: 35px;
+  margin: 40px 20px;
+  width: fit-content;
+  position: relative;
+}
+
+body > .page > .content > .main-title::after {
+  content: "";
+  width: 80%;
+  height: 3px;
+  border-radius: 6px;
+  background-image: linear-gradient(to right, black 40%, white 40% );
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+}
+/* End Main Title Styles */
+
 /* Start Wraper Styles */
 body > div.page > .content > div.wraper {
   display: grid;
