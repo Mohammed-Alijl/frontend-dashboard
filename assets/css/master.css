@@ -1675,6 +1675,61 @@ body
 }
 /* End Reminders Section Styles */
 
+/* Start Last Post Section Styles */
+body > div.page > .content > div.wraper > section.last-post {
+  padding: 20px;
+}
+
+body > div.page > .content > div.wraper > section.last-post > .post {
+  padding-top: 30px;
+}
+
+body > div.page > .content > div.wraper > section.last-post > .post > .info {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+body > div.page > .content > div.wraper > section.last-post > .post > .info > .img-holder {
+  width: 50px;
+  height: 50px;
+}
+
+body > div.page > .content > div.wraper > section.last-post > .post > .info img {
+  max-width: 100%;
+  border-radius: 50%;
+}
+
+body > div.page > .content > div.wraper > section.last-post > .post > .info p {
+  color: var(--grey-color);
+}
+
+body > div.page > .content > div.wraper > section.last-post > .post > .content p {
+  line-height: 1.7;
+  text-transform: capitalize;
+}
+
+body > div.page > .content > div.wraper > section.last-post > .post > .post-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+body > div.page > .content > div.wraper > section.last-post > .post > .post-footer i {
+  transition: var(--main-transition);
+  cursor: pointer;
+}
+
+body > div.page > .content > div.wraper > section.last-post > .post > .post-footer i:first-of-type:hover {
+  color: var(--red-color);
+}
+
+body > div.page > .content > div.wraper > section.last-post > .post > .post-footer i:last-of-type:hover {
+  color: var(--main-color);
+}
+/* End Last Post Section Styles */
+
 /* Start Animations Styles */
 @keyframes flash-danger {
   0% {
