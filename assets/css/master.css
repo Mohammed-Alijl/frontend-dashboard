@@ -2010,6 +2010,208 @@ body
 
 /* End Social Media Section Styles */
 
+/* Start Projects Table Section Styles */
+body > div.page > .content > section.projects-table {
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 20px 10px;
+  padding: 20px;
+}
+
+body > div.page > .content > section.projects-table > .title {
+  text-transform: capitalize;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+body > div.page > .content > section.projects-table > div.responsive-table {
+  overflow-x: auto;
+}
+
+body
+  > div.page
+  > .content
+  > section.projects-table
+  > div.responsive-table
+  > table {
+  text-transform: capitalize;
+  margin-top: 30px;
+  border-spacing: 0;
+  min-width: 1000px;
+  width: 100%;
+  text-align: left;
+  font-size: 15px;
+}
+
+body
+  > div.page
+  > .content
+  > section.projects-table
+  > div.responsive-table
+  > table
+  td,
+body
+  > div.page
+  > .content
+  > section.projects-table
+  > div.responsive-table
+  > table
+  th {
+  padding: 15px;
+  border-left: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  transition: var(--main-transition);
+}
+
+body
+  > div.page
+  > .content
+  > section.projects-table
+  > div.responsive-table
+  > table
+  tr:hover
+  td {
+  background-color: #faf7f7;
+}
+
+body
+  > div.page
+  > .content
+  > section.projects-table
+  > div.responsive-table
+  > table
+  th {
+  font-weight: bold;
+}
+
+body
+  > div.page
+  > .content
+  > section.projects-table
+  > div.responsive-table
+  > table
+  > thead {
+  background-color: #eee;
+}
+
+body
+  > div.page
+  > .content
+  > section.projects-table
+  > div.responsive-table
+  > table
+  > tbody
+  td.team {
+  display: flex;
+}
+
+body
+  > div.page
+  > .content
+  > section.projects-table
+  > div.responsive-table
+  > table
+  > tbody
+  td.team
+  .img-holder {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+body
+  > div.page
+  > .content
+  > section.projects-table
+  > div.responsive-table
+  > table
+  > tbody
+  td.team
+  .img-holder:not(:first-of-type) {
+  margin-left: -15px;
+}
+
+body
+  > div.page
+  > .content
+  > section.projects-table
+  > div.responsive-table
+  > table
+  > tbody
+  td.team
+  .img-holder
+  img {
+  border-radius: 50%;
+  max-width: 100%;
+}
+
+body
+  > div.page
+  > .content
+  > section.projects-table
+  > div.responsive-table
+  > table
+  > tbody
+  td.status
+  > span {
+  display: inline-block;
+  padding: 5px 10px;
+  color: white;
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+body
+  > div.page
+  > .content
+  > section.projects-table
+  > div.responsive-table
+  > table
+  > tbody
+  td.status
+  > span.completed {
+  background-color: var(--green-color);
+}
+
+body
+  > div.page
+  > .content
+  > section.projects-table
+  > div.responsive-table
+  > table
+  > tbody
+  td.status
+  > span.rejected {
+  background-color: var(--red-color);
+}
+
+body
+  > div.page
+  > .content
+  > section.projects-table
+  > div.responsive-table
+  > table
+  > tbody
+  td.status
+  > span.progress {
+  background-color: var(--main-color);
+}
+
+body
+  > div.page
+  > .content
+  > section.projects-table
+  > div.responsive-table
+  > table
+  > tbody
+  td.status
+  > span.pending {
+  background-color: var(--orange-color);
+}
+/* End Projects Table Section Styles */
+
 /* Start Animations Styles */
 @keyframes flash-danger {
   0% {
