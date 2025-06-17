@@ -2625,6 +2625,113 @@ body
 }
 /* End Social Info Section Styles */
 
+/* Start Widget Control Section Styles */
+.page > .content > .wraper > section.widget-control form {
+  margin-top: 30px;
+}
+
+.page > .content > .wraper > section.widget-control form .row {
+  margin-bottom: 20px;
+}
+
+.page
+  > .content
+  > .wraper
+  > section.widget-control
+  form
+  input[type="checkbox"] {
+  appearance: none;
+}
+
+.page
+  > .content
+  > .wraper
+  > section.widget-control
+  form
+  input[type="checkbox"]
+  + label {
+  position: relative;
+  cursor: pointer;
+  padding-left: 30px;
+  text-transform: capitalize;
+  transition: var(--main-transition);
+}
+
+.page
+  > .content
+  > .wraper
+  > section.widget-control
+  form
+  input[type="checkbox"]:not(:checked)
+  + label:hover {
+  color: var(--main-alt-color);
+}
+
+.page
+  > .content
+  > .wraper
+  > section.widget-control
+  form
+  input[type="checkbox"]:not(:checked)
+  + label:hover::before {
+  border-color: var(--main-alt-color);
+}
+
+.page
+  > .content
+  > .wraper
+  > section.widget-control
+  form
+  input[type="checkbox"]
+  + label::before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 1px solid black;
+}
+
+.page
+  > .content
+  > .wraper
+  > section.widget-control
+  form
+  input[type="checkbox"]
+  + label::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f00c";
+  font-weight: 900;
+  color: var(--green-color);
+  font-size: 12px;
+  width: 18px;
+  height: 18px;
+  background-color: var(--main-alt-color);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -9px;
+  transform: scale(0) rotate(360deg);
+  transition: var(--main-transition);
+}
+
+.page
+  > .content
+  > .wraper
+  > section.widget-control
+  form
+  input[type="checkbox"]:checked
+  + label::after {
+  transform: scale(1) rotate(0);
+}
+/* End Widget Control Section Styles */
+
 /* Start Animations Styles */
 @keyframes flash-danger {
   0% {
