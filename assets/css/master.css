@@ -2224,12 +2224,7 @@ body > div.page > .content > div.wraper > section.site-controll form > .row {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 30px;
-}
-
-@media (max-width: 768px) {
-  body > div.page > .content > div.wraper > section.site-controll form > .row {
-    flex-direction: column;
-  }
+  gap: 20px;
 }
 
 body > div.page > .content > div.wraper > section.site-controll form > .row p {
