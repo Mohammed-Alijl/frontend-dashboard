@@ -2484,6 +2484,147 @@ body
 }
 /* End Security Info Section Styles */
 
+/* Start Social Info Section Styles */
+.page > .content > .wraper > section.social-info form {
+  margin-top: 30px;
+}
+
+.page > .content > .wraper > section.social-info form .row {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.page > .content > .wraper > section.social-info form input {
+  padding: 10px;
+  padding-left: 60px;
+  border: solid 1px #ccc;
+  width: 100%;
+  transition: var(--main-transition);
+  color: var(--grey-color);
+}
+
+.page
+  > .content
+  > .wraper
+  > section.social-info
+  form
+  .row:first-of-type
+  input:focus {
+  border-color: rgb(29, 161, 242);
+  caret-color: rgb(29, 161, 242);
+  color: rgb(29, 161, 242);
+}
+
+.page
+  > .content
+  > .wraper
+  > section.social-info
+  form
+  .row:nth-child(2)
+  input:focus {
+  border-color: rgb(59, 89, 152);
+  caret-color: rgb(59, 89, 152);
+  color: rgb(59, 89, 152);
+}
+
+.page
+  > .content
+  > .wraper
+  > section.social-info
+  form
+  .row:nth-child(3)
+  input:focus {
+  border-color: rgb(10, 102, 194);
+  caret-color: rgb(10, 102, 194);
+  color: rgb(10, 102, 194);
+}
+
+.page
+  > .content
+  > .wraper
+  > section.social-info
+  form
+  .row:last-of-type
+  input:focus {
+  border-color: rgb(255, 0, 0);
+  caret-color: rgb(255, 0, 0);
+  color: rgb(255, 0, 0);
+}
+
+.page > .content > .wraper > section.social-info form input::placeholder {
+  text-transform: capitalize;
+  transition: var(--main-transition);
+}
+
+.page > .content > .wraper > section.social-info form input:focus::placeholder {
+  opacity: 0;
+}
+
+.page > .content > .wraper > section.social-info form .row i {
+  width: 50px;
+  height: 40px;
+  background-color: #faf7f7;
+  color: var(--grey-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: solid 1px #ccc;
+  transition: var(--main-transition);
+  font-size: 18px;
+}
+
+.page
+  > .content
+  > .wraper
+  > section.social-info
+  form
+  .row:first-of-type
+  input:focus
+  + i {
+  border-color: rgb(29, 161, 242);
+  color: rgb(29, 161, 242);
+}
+
+.page
+  > .content
+  > .wraper
+  > section.social-info
+  form
+  .row:nth-child(2)
+  input:focus
+  + i {
+  border-color: rgb(59, 89, 152);
+  color: rgb(59, 89, 152);
+}
+
+.page
+  > .content
+  > .wraper
+  > section.social-info
+  form
+  .row:nth-child(3)
+  input:focus
+  + i {
+  border-color: rgb(10, 102, 194);
+  color: rgb(10, 102, 194);
+}
+
+.page
+  > .content
+  > .wraper
+  > section.social-info
+  form
+  .row:last-of-type
+  input:focus
+  + i {
+  border-color: rgb(255, 0, 0);
+  color: rgb(255, 0, 0);
+}
+/* End Social Info Section Styles */
+
 /* Start Animations Styles */
 @keyframes flash-danger {
   0% {
