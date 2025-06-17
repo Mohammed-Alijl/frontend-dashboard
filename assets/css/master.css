@@ -397,10 +397,15 @@ body > div.page > .content > div.wraper > section.box {
   border-radius: 10px;
   overflow: hidden;
   position: relative;
+  padding: 20px;
 }
 /* End Wraper Boxs Styles */
 
 /* Start Welcome Box Styles */
+body > div.page > .content > div.wraper > section.box.welcome {
+  padding: 0;
+}
+
 body
   > div.page
   > .content
@@ -692,10 +697,6 @@ body
 /* End Draft Box Styles */
 
 /* Start Yearly Targets Box Styles */
-body > div.page > .content > div.wraper > section.box.yearly-target {
-  padding: 20px;
-}
-
 body > div.page > .content > div.wraper > section.box.yearly-target > .content {
   margin-top: 30px;
 }
@@ -957,10 +958,6 @@ body
 /* End Yearly Targets Box Styles */
 
 /* Start Tickets Box Styles */
-body > div.page > .content > div.wraper > section.box.tickets {
-  padding: 20px;
-}
-
 body > div.page > .content > div.wraper > section.box.tickets > .content {
   margin-top: 30px;
   display: grid;
@@ -1064,10 +1061,6 @@ body
 /* End Tickets Targets Box Styles */
 
 /* Start Latest Event Section Styles */
-body > div.page > .content > div.wraper > section.box.events {
-  padding: 20px;
-}
-
 body > div.page > .content > div.wraper > section.box.events .content {
   margin-top: 20px;
 }
@@ -1148,10 +1141,6 @@ body
 /* End Latest Event Section Styles */
 
 /* Start Latest Tasks Section Styles */
-body > div.page > .content > div.wraper > section.tasks {
-  padding: 20px;
-}
-
 body > div.page > .content > div.wraper > section.tasks > .content {
   margin-top: 30px;
 }
@@ -1249,10 +1238,6 @@ body
 /* End Latest Tasks Section Styles */
 
 /* Start Top Search Section Styles */
-body > div.page > .content > div.wraper > section.top-search {
-  padding: 20px;
-}
-
 body > div.page > .content > div.wraper > section.top-search > .content {
   margin-top: 20px;
 }
@@ -1307,10 +1292,6 @@ body
 /* End Top Search Section Styles */
 
 /* Start Latest Uploads Section Styles */
-body > div.page > .content > div.wraper > section.uploads {
-  padding: 20px;
-}
-
 body > div.page > .content > div.wraper > section.uploads > .content > .row {
   display: flex;
   align-items: center;
@@ -1428,10 +1409,6 @@ body
 /* End Latest Uploads Section Styles */
 
 /* Start Last Projects Section Styles */
-body > div.page > .content > div.wraper > section.projects {
-  padding: 20px;
-}
-
 body > div.page > .content > div.wraper > section.projects > .content {
   margin-top: 30px;
 }
@@ -1517,10 +1494,6 @@ body
 /* End Last Projects Section Styles */
 
 /* Start Reminders Section Styles */
-body > div.page > .content > div.wraper > section.reminders {
-  padding: 20px;
-}
-
 body > div.page > .content > div.wraper > section.reminders .content {
   margin-top: 30px;
 }
@@ -1670,10 +1643,6 @@ body
 /* End Reminders Section Styles */
 
 /* Start Last Post Section Styles */
-body > div.page > .content > div.wraper > section.last-post {
-  padding: 20px;
-}
-
 body > div.page > .content > div.wraper > section.last-post > .post {
   padding-top: 30px;
 }
@@ -1781,9 +1750,6 @@ body
 /* End Last Post Section Styles */
 
 /* Start Social Media Section Styles */
-body > div.page > .content > div.wraper > section.social-media {
-  padding: 20px;
-}
 body > div.page > .content > div.wraper > section.social-media > .content {
   margin-top: 20px;
 }
@@ -2211,10 +2177,6 @@ body
 /* ====================================================== */
 
 /* Start Controll Site Section Styles */
-body > div.page > .content > div.wraper > section.site-controll {
-  padding: 20px;
-}
-
 body > div.page > .content > div.wraper > section.site-controll form {
   margin-top: 30px;
 }
@@ -2488,10 +2450,6 @@ body
 /* End General Info Section Styles */
 
 /* Start Security Info Section Styles */
-.page > .content > .wraper > section.security-info {
-  padding: 20px;
-}
-
 .page > .content > .wraper > section.security-info form {
   margin-top: 30px;
 }
