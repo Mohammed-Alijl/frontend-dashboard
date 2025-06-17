@@ -2244,25 +2244,11 @@ body > div.page > .content > div.wraper > section.site-controll form > .row p {
   margin-top: 5px;
 }
 
-body
-  > div.page
-  > .content
-  > div.wraper
-  > section.site-controll
-  form
-  > .row
-  .toggle-checkbox {
+body > div.page > .content > div.wraper > section form .toggle-checkbox {
   appearance: none;
 }
 
-body
-  > div.page
-  > .content
-  > div.wraper
-  > section.site-controll
-  form
-  > .row
-  .toggle-switch {
+body > div.page > .content > div.wraper > section form .toggle-switch {
   background-color: #ddd;
   border-radius: 60px;
   height: 30px;
@@ -2272,14 +2258,7 @@ body
   transition: var(--main-transition);
 }
 
-body
-  > div.page
-  > .content
-  > div.wraper
-  > section.site-controll
-  form
-  > .row
-  .toggle-switch::before {
+body > div.page > .content > div.wraper > section form .toggle-switch::before {
   font-family: "Font Awesome 5 Free";
   content: "\f00d";
   background-color: white;
@@ -2302,9 +2281,8 @@ body
   > div.page
   > .content
   > div.wraper
-  > section.site-controll
+  > section
   form
-  > .row
   .toggle-checkbox:checked
   + .toggle-switch {
   background-color: var(--main-color);
@@ -2314,9 +2292,8 @@ body
   > div.page
   > .content
   > div.wraper
-  > section.site-controll
+  > section
   form
-  > .row
   .toggle-checkbox:checked
   + .toggle-switch::before {
   font-family: "Font Awesome 5 Free";
@@ -2389,7 +2366,14 @@ body > div.page > .content > div.wraper > section.general-info > form div {
   margin-bottom: 20px;
 }
 
-body > div.page > .content > div.wraper > section.general-info > form div label {
+body
+  > div.page
+  > .content
+  > div.wraper
+  > section.general-info
+  > form
+  div
+  label {
   text-transform: capitalize;
   color: var(--grey-color);
   font-size: 15px;
@@ -2397,7 +2381,14 @@ body > div.page > .content > div.wraper > section.general-info > form div label 
   margin-bottom: 8px;
 }
 
-body > div.page > .content > div.wraper > section.general-info > form div input {
+body
+  > div.page
+  > .content
+  > div.wraper
+  > section.general-info
+  > form
+  div
+  input {
   padding: 10px;
   border-radius: 6px;
   border: 1px solid #ccc;
@@ -2413,19 +2404,42 @@ body > div.page > .content > div.wraper > section.general-info > form div div {
   gap: 20px;
 }
 
-body > div.page > .content > div.wraper > section.general-info > form div input[type="email"] {
+body
+  > div.page
+  > .content
+  > div.wraper
+  > section.general-info
+  > form
+  div
+  input[type="email"] {
   cursor: not-allowed;
   width: 85%;
   background-color: #faf7f7;
 }
 
-body > div.page > .content > div.wraper > section.general-info > form div input[type="email"] + a {
+body
+  > div.page
+  > .content
+  > div.wraper
+  > section.general-info
+  > form
+  div
+  input[type="email"]
+  + a {
   text-transform: capitalize;
   color: var(--main-color);
   position: relative;
 }
 
-body > div.page > .content > div.wraper > section.general-info > form div input[type="email"] + a::before {
+body
+  > div.page
+  > .content
+  > div.wraper
+  > section.general-info
+  > form
+  div
+  input[type="email"]
+  + a::before {
   content: "";
   width: 0;
   height: 2px;
@@ -2437,23 +2451,91 @@ body > div.page > .content > div.wraper > section.general-info > form div input[
   transition: var(--main-transition);
 }
 
-body > div.page > .content > div.wraper > section.general-info > form div input[type="email"] + a:hover:before {
+body
+  > div.page
+  > .content
+  > div.wraper
+  > section.general-info
+  > form
+  div
+  input[type="email"]
+  + a:hover:before {
   width: 100%;
 }
 
-body > div.page > .content > div.wraper > section.general-info > form div input:focus {
+body
+  > div.page
+  > .content
+  > div.wraper
+  > section.general-info
+  > form
+  div
+  input:focus {
   border-color: var(--main-color);
 }
 
-body > div.page > .content > div.wraper > section.general-info > form div input::placeholder {
+body
+  > div.page
+  > .content
+  > div.wraper
+  > section.general-info
+  > form
+  div
+  input::placeholder {
   text-transform: capitalize;
   transition: var(--main-transition);
 }
 
-body > div.page > .content > div.wraper > section.general-info > form div input:focus::placeholder {
+body
+  > div.page
+  > .content
+  > div.wraper
+  > section.general-info
+  > form
+  div
+  input:focus::placeholder {
   opacity: 0;
 }
 /* End General Info Section Styles */
+
+/* Start Security Info Section Styles */
+.page > .content > .wraper > section.security-info {
+  padding: 20px;
+}
+
+.page > .content > .wraper > section.security-info form {
+  margin-top: 30px;
+}
+
+.page > .content > .wraper > section.security-info form .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.page > .content > .wraper > section.security-info form .row > .details {
+  text-transform: capitalize;
+}
+
+.page > .content > .wraper > section.security-info form .row .description {
+  color: var(--grey-color);
+  margin-top: 5px;
+}
+
+.page > .content section .btn {
+  padding: 5px 10px;
+  text-transform: capitalize;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transition: var(--main-transition);
+}
+
+.page > .content section .btn:hover {
+  background-color: gainsboro;
+}
+/* End Security Info Section Styles */
 
 /* Start Animations Styles */
 @keyframes flash-danger {
