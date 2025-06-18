@@ -1827,6 +1827,18 @@ body
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: var(--main-transition);
+}
+
+body
+  > div.page
+  > .content
+  > div.wraper
+  > section.social-media
+  > .content
+  > .row
+  .icon-holder:hover {
+  transform: rotate(10deg);
 }
 
 body
