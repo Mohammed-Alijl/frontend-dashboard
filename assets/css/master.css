@@ -1722,6 +1722,7 @@ body
   i {
   transition: var(--main-transition);
   cursor: pointer;
+  font-weight: normal;
 }
 
 body
