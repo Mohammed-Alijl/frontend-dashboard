@@ -3414,6 +3414,16 @@ body
   content: "$ ";
 }
 
+
+/* ====================================================== */
+/* ============= START COURSES PAGE ===================== */
+/* ====================================================== */
+.page > .content > div.courses {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
 /* Start Animations Styles */
 @keyframes flash-danger {
   0% {
