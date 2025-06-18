@@ -3286,6 +3286,24 @@ body
 }
 /* End Profile Overview Section */
 
+/* ====================================================== */
+/* ============= START SETTINGS PAGE ==================== */
+/* ====================================================== */
+.page > .content > div.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  gap: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+  .page > .content > div.projects {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
 /* Start Animations Styles */
 @keyframes flash-danger {
   0% {
