@@ -3520,8 +3520,8 @@ body
 
 @media (max-width: 768px) {
   .page > .content > div.frindes {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
 
@@ -3626,6 +3626,29 @@ body
 .btn-danger:hover {
   background-color: #dc1506;
 }
+
+/* ====================================================== */
+/* ============= START FILES PAGE ======================= */
+/* ====================================================== */
+.page > .content > div.files {
+  display: flex;
+  margin-left: 20px;
+  margin-right: 20px;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .page > .content > div.files {
+    margin-left: 10px;
+    margin-right: 10px;
+    flex-direction: column;
+  }
+}
+
+.page > .content > div.files .files-overview {
+  flex: 2;
+}
+
 /* Start Animations Styles */
 @keyframes flash-danger {
   0% {
