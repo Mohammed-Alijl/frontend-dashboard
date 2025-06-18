@@ -3304,6 +3304,116 @@ body
   }
 }
 
+.page > .content > div.projects > .project {
+  position: relative;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.page > .content > div.projects > .project .title {
+  font-size: 18px;
+  font-weight: normal;
+  margin-bottom: 5px;
+  text-transform: capitalize;
+}
+
+.page > .content > div.projects > .project .description {
+  text-transform: capitalize;
+  color: var(--grey-color);
+  font-size: 15px;
+}
+
+.page > .content > div.projects > .project .time {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 13px;
+  color: var(--grey-color);
+}
+
+.page > .content > div.projects > .project .team {
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.page > .content > div.projects > .project .team img {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+
+.page > .content > div.projects > .project .team img:not(:first-of-type) {
+  margin-left: -15px;
+}
+
+.page > .content > div.projects > .project .skills {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  padding: 10px 0;
+}
+
+.page > .content > div.projects > .project .skills span {
+  padding: 4px 10px;
+  background-color: #eee;
+  border-radius: 6px;
+  font-size: 15px;
+  text-transform: capitalize;
+}
+
+.page > .content > div.projects > .project > footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.page > .content > div.projects > .project > footer .porgress {
+  width: 260px;
+  height: 8px;
+  background-color: #eee;
+  border-radius: 10px;
+  position: relative;
+}
+
+.page > .content > div.projects > .project > footer .porgress > span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.page > .content > div.projects > .project > footer .porgress > span.danger {
+  width: 35%;
+  background-color: var(--red-color);
+}
+
+.page > .content > div.projects > .project > footer .porgress > span.success {
+  width: 65%;
+  background-color: var(--green-color);
+}
+
+.page > .content > div.projects > .project > footer .porgress > span.completed {
+  width: 100%;
+  background-color: var(--main-color);
+}
+
+.page > .content > div.projects > .project > footer .cost {
+  color: var(--grey-color);
+  position: relative;
+}
+
+.page > .content > div.projects > .project > footer .cost::before {
+  content: "$ ";
+}
+
 /* Start Animations Styles */
 @keyframes flash-danger {
   0% {
