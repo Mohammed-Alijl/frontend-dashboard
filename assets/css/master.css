@@ -3507,6 +3507,23 @@ body
   content: "\24";
 }
 
+/* ====================================================== */
+/* ============= START Frindes PAGE ===================== */
+/* ====================================================== */
+.page > .content > div.frindes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+  .page > .content > div.frindes {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
 /* Start Animations Styles */
 @keyframes flash-danger {
   0% {
