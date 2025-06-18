@@ -3089,6 +3089,54 @@ body
   color: var(--green-color);
   left: 55px;
 }
+
+.page > .content > div.line-two {
+  margin: 20px;
+  display: flex;
+  gap: 30px;
+}
+
+.page > .content > div.line-two section {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.page > .content > div.line-two > section > .title {
+  text-transform: capitalize;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.page > .content > div.line-two > section > .description {
+  color: var(--grey-color);
+  text-transform: capitalize;
+}
+
+.page > .content > div.line-two > section.skills {
+  flex: 1;
+}
+
+.page > .content > div.line-two > section.skills ul {
+  margin-top: 30px;
+}
+
+.page > .content > div.line-two > section.skills ul li {
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.page > .content > div.line-two > section.skills ul li span {
+  background-color: #eee;
+  border-radius: 6px;
+  padding: 4px 10px;
+  margin-right: 5px;
+}
+
+.page > .content > div.line-two > section.latest-activites {
+  flex: 2;
+}
 /* End Profile Overview Section */
 
 /* Start Animations Styles */
