@@ -3094,6 +3094,13 @@ body
   margin: 20px;
   display: flex;
   gap: 30px;
+  flex-direction: column;
+}
+
+@media (min-width: 1200px) {
+  .page > .content > div.line-two {
+    flex-direction: row;
+  }
 }
 
 .page > .content > div.line-two section {
@@ -3136,6 +3143,146 @@ body
 
 .page > .content > div.line-two > section.latest-activites {
   flex: 2;
+}
+
+.page > .content > div.line-two > section.latest-activites > .content {
+  margin-top: 30px;
+}
+
+.page > .content > div.line-two > section.latest-activites > .content > .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+@media (max-width: 768px) {
+  .page > .content > div.line-two > section.latest-activites > .content > .row {
+    flex-direction: column;
+  }
+}
+
+.page
+  > .content
+  > div.line-two
+  > section.latest-activites
+  > .content
+  > .row
+  .info {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .page
+    > .content
+    > div.line-two
+    > section.latest-activites
+    > .content
+    > .row
+    .info {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+.page
+  > .content
+  > div.line-two
+  > section.latest-activites
+  > .content
+  > .row
+  .info
+  img {
+  width: 64px;
+  height: 64px;
+}
+
+.page
+  > .content
+  > div.line-two
+  > section.latest-activites
+  > .content
+  > .row
+  .info
+  .title {
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+
+.page
+  > .content
+  > div.line-two
+  > section.latest-activites
+  > .content
+  > .row
+  .info
+  .description {
+  color: var(--grey-color);
+}
+
+.page
+  > .content
+  > div.line-two
+  > section.latest-activites
+  > .content
+  > .row
+  > .time
+  p:first-of-type {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.page
+  > .content
+  > div.line-two
+  > section.latest-activites
+  > .content
+  > .row
+  > .time
+  p:last-of-type {
+  color: var(--grey-color);
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .page
+    > .content
+    > div.line-two
+    > section.latest-activites
+    > .content
+    > .row
+    > .time {
+    text-align: center;
+  }
+
+  .page
+    > .content
+    > div.line-two
+    > section.latest-activites
+    > .content
+    > .row
+    > .time
+    p:first-of-type {
+    font-size: 15px;
+  }
+
+  .page
+    > .content
+    > div.line-two
+    > section.latest-activites
+    > .content
+    > .row
+    > .time
+    p:last-of-type {
+    font-size: 15px;
+  }
 }
 /* End Profile Overview Section */
 
