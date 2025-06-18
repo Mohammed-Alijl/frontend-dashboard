@@ -356,6 +356,66 @@
               </div>
             </form>
           </section>
+          <section class="box backup-manger">
+            <h3 class="title">backup manger</h3>
+            <p class="description">Control backup time and servers</p>
+            <form action="#">
+              <div class="time">
+                <div class="row">
+                  <input
+                    type="radio"
+                    name="time"
+                    id="daily"
+                    value="daily"
+                    checked
+                  />
+                  <label for="daily">daily</label>
+                </div>
+                <div class="row">
+                  <input type="radio" name="time" id="weekly" value="weekly" />
+                  <label for="weekly">weekly</label>
+                </div>
+                <div class="row">
+                  <input type="radio" name="time" id="yearly" value="yearly" />
+                  <label for="yearly">yearly</label>
+                </div>
+              </div>
+              <div class="servers">
+                <input
+                  type="radio"
+                  name="servers"
+                  id="magazan"
+                  value="magazan"
+                />
+                <div class="server">
+                  <label for="magazan">
+                    <i class="fa-solid fa-server"></i>
+                    <h4>magazan</h4>
+                  </label>
+                </div>
+                <input
+                  type="radio"
+                  name="servers"
+                  id="zero"
+                  value="zero"
+                  checked
+                />
+                <div class="server">
+                  <label for="zero">
+                    <i class="fa-solid fa-server"></i>
+                    <h4>zero</h4>
+                  </label>
+                </div>
+                <input type="radio" name="servers" id="sigma" value="sigma" />
+                <div class="server">
+                  <label for="sigma">
+                    <i class="fa-solid fa-server"></i>
+                    <h4>sigma</h4>
+                  </label>
+                </div>
+              </div>
+            </form>
+          </section>
         </div>
         <!-- End Page Content -->
       </div>

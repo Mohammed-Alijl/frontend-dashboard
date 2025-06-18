@@ -2732,6 +2732,162 @@ body
 }
 /* End Widget Control Section Styles */
 
+/* Start Backup Manger Section Styles */
+.page > .content > .wraper > section.backup-manger > form {
+  margin-top: 30px;
+  text-transform: capitalize;
+}
+
+.page > .content > .wraper > section.backup-manger > form > .time {
+  padding-bottom: 20px;
+}
+
+.page > .content > .wraper > section.backup-manger > form > .time > .row {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 35px;
+  align-items: center;
+}
+
+.page > .content > .wraper > section.backup-manger > form input[type="radio"] {
+  appearance: none;
+  position: relative;
+  cursor: pointer;
+}
+
+.page
+  > .content
+  > .wraper
+  > section.backup-manger
+  > form
+  > .time
+  input[type="radio"]::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 22px;
+  height: 22px;
+  margin-top: -11px;
+  border-radius: 50%;
+  border: 2px solid var(--main-color);
+}
+
+.page
+  > .content
+  > .wraper
+  > section.backup-manger
+  > form
+  > .time
+  input[type="radio"]::after {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 50%;
+  background-color: var(--main-color);
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  transform: scale(0);
+  transition: var(--main-transition);
+}
+
+.page
+  > .content
+  > .wraper
+  > section.backup-manger
+  > form
+  > .time
+  input[type="radio"]:checked::after {
+  transform: scale(1);
+}
+
+.page
+  > .content
+  > .wraper
+  > section.backup-manger
+  > form
+  input[type="radio"]
+  + label {
+  transition: var(--main-transition);
+  cursor: pointer;
+}
+
+.page > .content > .wraper > section.backup-manger > form > .servers {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  border-top: 1px solid #eee;
+  padding-top: 30px;
+}
+
+@media (max-width: 768px) {
+  .page > .content > .wraper > section.backup-manger > form > .servers {
+    flex-wrap: wrap;
+  }
+}
+
+.page > .content > .wraper > section.backup-manger > form > .servers > .server {
+  width: 100%;
+  text-align: center;
+  border: 1px solid var(--grey-color);
+  border-radius: 10px;
+  transition: var(--main-transition);
+}
+
+.page
+  > .content
+  > .wraper
+  > section.backup-manger
+  > form
+  > .servers
+  > .server
+  label {
+  display: block;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.page
+  > .content
+  > .wraper
+  > section.backup-manger
+  > form
+  > .servers
+  > .server
+  i {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.page
+  > .content
+  > .wraper
+  > section.backup-manger
+  > form
+  > .servers
+  > .server
+  h4 {
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+
+.page
+  > .content
+  > .wraper
+  > section.backup-manger
+  > form
+  > .servers
+  > input[type="radio"]:checked
+  + div {
+  color: var(--main-color);
+  border-color: var(--main-color);
+}
+/* End Backup Manger Section Styles */
+
 /* Start Animations Styles */
 @keyframes flash-danger {
   0% {
