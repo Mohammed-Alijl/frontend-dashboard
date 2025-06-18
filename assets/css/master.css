@@ -3841,6 +3841,137 @@ body
   }
 }
 
+.page > .content > div.plans .card {
+  padding: 20px;
+  background-color: white;
+  border-radius: 6px;
+}
+
+.page > .content > div.plans .card > header {
+  text-align: center;
+  color: white;
+  border: 3px solid white;
+  padding: 20px 0;
+  font-size: 20px;
+}
+
+.page > .content > div.plans .card:first-of-type > header {
+  background-color: var(--green-color);
+  outline: 3px solid var(--green-color);
+}
+
+.page > .content > div.plans .card:nth-child(2) > header {
+  background-color: var(--main-color);
+  outline: 3px solid var(--main-color);
+}
+
+.page > .content > div.plans .card:last-of-type > header {
+  background-color: var(--orange-color);
+  outline: 3px solid var(--orange-color);
+}
+
+.page > .content > div.plans .card > header > .price {
+  position: relative;
+  font-size: 40px;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.page > .content > div.plans .card > header > .price::before {
+  content: "$";
+  position: absolute;
+  left: -20px;
+  top: 0px;
+  font-size: 18px;
+}
+
+.page > .content > div.plans .card > ul {
+  margin-top: 20px;
+}
+
+.page > .content > div.plans .card > ul > li {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #eee;
+}
+
+.page > .content > div.plans .card > ul > li > p {
+  position: relative;
+}
+
+.page > .content > div.plans .card > ul > li > p::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f00c";
+  font-weight: 900;
+  color: var(--green-color);
+  position: absolute;
+  left: -20px;
+}
+
+.page
+  > .content
+  > div.plans
+  .card:first-of-type
+  > ul
+  > li:not(:nth-child(1), :nth-child(2), :nth-child(3))
+  > p::before,
+.page
+  > .content
+  > div.plans
+  .card:nth-child(2)
+  > ul
+  > li:nth-last-child(1)
+  p::before,
+.page
+  > .content
+  > div.plans
+  .card:nth-child(2)
+  > ul
+  > li:nth-last-child(2)
+  p::before {
+  content: "\f00d";
+  color: var(--red-color);
+}
+
+.page > .content > div.plans .card > ul > li > i {
+  color: var(--grey-color);
+}
+
+.page > .content > div.plans .card button {
+  margin-top: 20px;
+}
+
+.btn-success {
+  background-color: var(--green-color);
+  color: white;
+  padding: 4px 10px;
+  border: none;
+  text-transform: capitalize;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: var(--main-transition);
+}
+
+.btn-success:hover {
+  background-color: #129944;
+}
+
+.btn-orange {
+  background-color: var(--orange-color);
+  color: white;
+  padding: 4px 10px;
+  border: none;
+  text-transform: capitalize;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: var(--main-transition);
+}
+
+.btn-orange:hover {
+  background-color: #d49931;
+}
+
 /* Start Animations Styles */
 @keyframes flash-danger {
   0% {
